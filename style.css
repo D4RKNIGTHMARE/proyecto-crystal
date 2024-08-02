@@ -20,7 +20,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: 1;
-  transition: opacity 2s ease;
+  transition: opacity 2s ease-in;
   opacity: 1;
   background: #000000;
   background: -webkit-linear-gradient(
@@ -53,26 +53,30 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: color 1s ease-in-out;
+  transition: color 4s ease-in-out;
 }
 
 .texto-header h1 h2 {
   font-family: "Poppins", sans-serif;
 }
 
-.texto-header .title {
+.title {
   font-size: 50px;
   color: #fff;
 }
 
-.texto-header .subtitle {
+.subtitle {
   font-size: 30px;
   font-weight: 300;
   color: #fff;
 }
 
-.texto-header.changed-color {
-    color: rgb(0, 110, 255);
+#textHeader.changed-color {
+    color: rgb(6, 83, 250);
+}
+
+#TextHeader2.changed-color-2 {
+  color: rgb(6, 221, 250);
 }
 
 .video-container {

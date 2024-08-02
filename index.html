@@ -13,9 +13,9 @@
   </head>
   <body>
     <header id="Cw-grupal">
-      <section class="texto-header" id="textHeader">
-        <h1 class="title">¡안녕하세요 Somos Crystal Wave!</h1>
-        <h2 class="subtitle">
+      <section class="texto-header">
+        <h1 class="title" id="textHeader">¡안녕하세요 Somos Crystal Wave!</h1>
+        <h2 class="subtitle" id="TextHeader2">
           Somos un grupo de dance cover de KPOP de la cidudad de cartagena
         </h2>
       </section>
@@ -27,18 +27,18 @@
       </div>
       <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var bgImage = document.getElementById("bgImage");
             var bgVideo = document.getElementById("bgVideo");
-            var textHeader = document.getElementById("textHeader");
             
             setTimeout(function() {
-                bgImage.classList.remove("hidden");
-            }, 2000); 
+                var textHeader = document.getElementById("textHeader");
+                var TextHeader = document.getElementById("TextHeader2");
+                textHeader.classList.add("changed-color");
+                TextHeader2.classList.add("change-color-2");
+            }, 28000); 
 
             
             bgVideo.addEventListener("ended", function() {
                 bgImage.classList.add("hidden");
-                textHeader.classList.add("changed-color");
             });
         });
       </script>
