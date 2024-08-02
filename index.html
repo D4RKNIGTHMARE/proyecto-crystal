@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Crystal Wave</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="Imagen/Crystal.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
+    <header id="Cw-grupal">
+      <section class="texto-header" id="textHeader">
+        <h1 class="title">¡안녕하세요 Somos Crystal Wave!</h1>
+        <h2 class="subtitle">
+          Somos un grupo de dance cover de KPOP de la cidudad de cartagena
+        </h2>
+      </section>
+      <div class="bg-grupal" id="bgImage"></div>
+     <div class="video-container">
+        <video id="bgVideo" autoplay muted>
+          <source src="Imagen/Queen.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var bgImage = document.getElementById("bgImage");
+            var bgVideo = document.getElementById("bgVideo");
+            var textHeader = document.getElementById("textHeader");
+            
+            setTimeout(function() {
+                bgImage.classList.remove("hidden");
+            }, 2000); 
+
+            
+            bgVideo.addEventListener("ended", function() {
+                bgImage.classList.add("hidden");
+                textHeader.classList.add("changed-color");
+            });
+        });
+      </script>
+    </header>
     <main></main>
     <footer></footer>
   </body>
