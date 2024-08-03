@@ -25,26 +25,31 @@
           <source src="Imagen/Queen.mp4" type="video/mp4" />
         </video>
       </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var bgVideo = document.getElementById("bgVideo");
-            
-            setTimeout(function() {
-                var textHeader = document.getElementById("textHeader");
-                var TextHeader = document.getElementById("TextHeader2");
-                textHeader.classList.add("changed-color");
-                TextHeader2.classList.add("change-color-2");
-            }, 28000); 
-
-            
-            bgVideo.addEventListener("ended", function() {
-                bgImage.classList.add("hidden");
-            });
-        });
-      </script>
     </header>
     <main>
-      
+      <section class="Sobre-Crystal">
+        <div class="container">
+          <div class="group-history" id="group-history">
+            <div class="logo">
+              <img src="Imagen/Olitas.jpg" alt="Logo de crystal">
+            </div>
+            <div class="story">
+              <h2>Historia de Crystal</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut distinctio corrupti assumenda minus tempore, similique voluptatum tenetur voluptas iusto blanditiis ad magni, dicta deserunt corporis, quae qui necessitatibus repellendus!</p>
+              <p>Lider de Crystal Wave</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+
+      </section>
+      <section>
+
+      </section>
+      <section>
+
+      </section>
     </main>
      <footer class="final-pagina">
         <div class="contenedor-footer">
@@ -71,5 +76,6 @@
         <h2 class="titulo-final">&copy;2024 <b>Crystal Wave Desing / Fercho</b> - Todos los derechos reservados </h2>
     </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
