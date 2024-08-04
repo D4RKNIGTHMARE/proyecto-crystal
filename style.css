@@ -97,7 +97,6 @@ video {
 }
 
 /*Main Sobre-Crystal*/
-
 main .Sobre-Crystal {
   padding: 30px 0 50px 0;
 }
@@ -153,7 +152,6 @@ main .Sobre-Crystal {
 }
 
 /*Main Integrantes de crystal*/
-
 #integrantes {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas */
@@ -193,6 +191,86 @@ main .Sobre-Crystal {
   display: block;
 }
 
+/*Main Seccion Carrusel*/
+.carrusel {
+  position: relative;
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.titulo-carrusel {
+  font-size: 50%;
+  margin: 20px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.carrusel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+}
+
+.event-content {
+  display: flex;
+  align-items: center;
+}
+
+.event-content img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info-evento {
+  padding: 20px;
+  flex: 1;
+  color: #000;
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 /*footer*/
 .final-pagina {

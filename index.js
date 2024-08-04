@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*Logica de los Integrantes*/
-
 document.querySelectorAll('.integrante').forEach(item => {
     item.addEventListener('click', () => {
       document.querySelectorAll('.integrante').forEach(i => {
@@ -43,3 +42,32 @@ document.querySelectorAll('.integrante').forEach(item => {
     });
   });
   
+  /*Logica del Carrusel*/
+  let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+  if (index >= slides.length) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide = index;
+  }
+
+  const offset = -currentSlide * 100;
+  document.querySelector('.carrusel-container').style.transform = `translateX(${offset}%)`;
+
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[currentSlide].classList.add('active');
+}
+
+function moveSlide(n) {
+  showSlide(currentSlide + n);
+}
+
+function openEvent(url) {
+  window.open(url, '_blank');
+}
+
+showSlide(currentSlide);
