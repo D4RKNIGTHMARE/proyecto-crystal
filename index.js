@@ -31,3 +31,15 @@ document.addEventListener("DOMContentLoaded", function() {
         bgImage.classList.add("hidden");
     });
 });
+
+/*Logica de los Integrantes*/
+
+document.querySelectorAll('.integrante').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.integrante').forEach(i => {
+        if (i !== item) i.classList.remove('show-info');
+      });
+      item.classList.toggle('show-info');
+    });
+  });
+  
