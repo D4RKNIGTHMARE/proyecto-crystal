@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*Logica de los Integrantes*/
-document.querySelectorAll('.integrante').forEach(item => {
-    item.addEventListener('click', () => {
-      document.querySelectorAll('.integrante').forEach(i => {
-        if (i !== item) i.classList.remove('show-info');
-      });
-      item.classList.toggle('show-info');
-    });
-  });
+function mostrarInfo(element) {
+  const info = element.querySelector('.info-integrante');
+  if (info.style.opacity == 0 || info.style.opacity == "") {
+    info.style.opacity = 1;
+  } else {
+    info.style.opacity = 0;
+  }
+}
   
   /*Logica del Carrusel*/
   let currentSlide = 0;

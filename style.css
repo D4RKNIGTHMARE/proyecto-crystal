@@ -179,6 +179,52 @@ button:hover {
   to { opacity: 1; }
 }
 
+/*Main Integrantes de crystal*/
+#integrantes {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.integrante h2{
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.integrante {
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer;
+}
+
+.integrante img{
+width: 100%;
+border-radius: 10px;
+transition: transform 0.3 ease;
+}
+
+.integrante:hover img {
+  transform: scale(1.05);
+}
+
+.info-integrante {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.integrante:hover .info-integrante{
+  opacity: 1;
+}
+
 /*Main Sobre-Crystal*/
 main .Sobre-Crystal {
   padding: 30px 0 50px 0;
@@ -233,47 +279,6 @@ main .Sobre-Crystal {
   text-align: justify;
   font-weight: 200;
 }
-
-/*Main Integrantes de crystal*/
-#integrantes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-  gap: 20px; 
-  padding: 20px;
-}
-
-.integrante {
-  position: relative;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.integrante:hover {
-  transform: scale(1.05);
-}
-
-.foto-integrante {
-  width: 100%;
-  height: auto;   
-  border-radius: 10%;
-}
-
-.info-integrante {
-  display: none;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: #000; 
-}
-
-.integrante.show-info .info-integrante {
-  display: block;
-}
-
 
 /*footer*/
 .final-pagina {
