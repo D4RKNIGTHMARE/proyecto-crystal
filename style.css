@@ -34,6 +34,18 @@ nav ul li a{
   font-weight: bold;
 }
 
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+  }
+}
+
 /*Main Banner*/
 .banner{
   position: relative;
@@ -279,6 +291,18 @@ main .Sobre-Crystal {
   padding: 0px 0px 30px 15px;
   text-align: justify;
   font-weight: 200;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+  }
 }
 
 /*footer*/
