@@ -43,6 +43,19 @@ function openEvent(url) {
 
 showSlide(currentSlide);
 
+/*Logica del concurso*/
+document.querySelector('form').addEventListener('submit', function(event) {
+  const nombre = document.getElementById('nombre').value;
+  const email = document.getElementById('email').value;
+  const concurso = document.getElementById('concurso').value;
+
+  if (!nombre || !email || !concurso) {
+    event.preventDefault();  // Prevenir el envío del formulario
+    alert('Por favor, completa todos los campos.');
+  }
+});
+
+
 /*Logica de la seccion de historia de crystal
 document.addEventListener('DOMContentLoaded', () => {
   const groupHistory = document.getElementById('group-history');

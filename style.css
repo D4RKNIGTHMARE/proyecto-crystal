@@ -58,8 +58,6 @@ nav ul li a{
   text-align: center;
   color: rgb(4, 201, 250);
   text-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.7);
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
 }
 
 .banner-content h1{

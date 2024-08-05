@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crystal Wave</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="Imagen/Crystal.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="Imagen/Olitas.jpg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
@@ -18,19 +18,19 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">integrantes</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Multimedia</a></li>
-          <li><a href="#">Historia</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-          <!--<li><a href="#">Inicio</a></li>-->
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#integrantes">integrantes</a></li>
+          <li><a href="#Eventos">Eventos</a></li>
+          <li><a href="#Multimedia">Multimedia</a></li>
+          <li><a href="#Historia">Historia</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#Contato">Contacto</a></li>
+          <li><a href="#Noticias">Noticias</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="banner">
+      <section class="banner" id="Inicio">
         <video id="bgVideo" autoplay muted>
           <source src="Imagen/Queen.mp4" type="video/mp4" />
         </video>
@@ -40,7 +40,7 @@
         </div>
     </section>
       
-    <section class="noticias">
+    <section class="noticias" id="Noticias">
       <h2>Ultimas Noticias</h2>
       <div class="noticia"> 
         <h3>Titulo de la noticia</h3>
@@ -49,7 +49,91 @@
       </div>
       <!--se agrega mas noticias desde .noticia-->
     </section>
-      <section id="carrusel" class="carrusel">
+    <section id="integrantes">
+      <h2>Conoce a los integrantes</h2>
+      <div class="integrante" onclick="mostrarInfo(this)">
+        <img src="Imagen/Mapau.jpg" alt="Nombre del Integrante 1">
+        <div class="info-integrante">
+          <h3>Nombre del Integrante 1</h3>
+          <p>Rol: Rol del Integrante 1</p>
+          <p>Historia de como se unio</p>
+        </div>
+      </div>
+      <div class="integrante">
+          <img src="Imagen/Amorchis.jpg" alt="Nombre del Integrante 2">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 2</h3>
+            <p>Rol: Rol del Integrante 2</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Yose.jpg" alt="Nombre del Integrante 3">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 3</h3>
+            <p>Rol: Rol del Integrante 3</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Ady.jpg" alt="Nombre del Integrante 4">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 4</h3>
+            <p>Rol: Rol del Integrante 4</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Lau.jpg" alt="Nombre del Integrante 5">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 5</h3>
+            <p>Rol: Rol del Integrante 5</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Une.jpg" alt="Nombre del Integrante 6">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 6</h3>
+            <p>Rol: Rol del Integrante 6</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Nikki.jpg" alt="Nombre del Integrante 7">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 7</h3>
+            <p>Rol: Rol del Integrante 7</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Elli.jpg" alt="Nombre del Integrante 8">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 8</h3>
+            <p>Rol: Rol del Integrante 8</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Leria.jpg" alt="Nombre del Integrante 9">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 9</h3>
+            <p>Rol: Rol del Integrante 9</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <img src="Imagen/Yassi.jpg" alt="Nombre del Integrante 10">
+          <div class="info-integrante">
+            <h3>Nombre del Integrante 10</h3>
+            <p>Rol: Rol del Integrante 10</p>
+            <p>Historia de como se unio</p>
+          </div>
+        </div>
+    </section>
+
+      <section id="Eventos" class="carrusel">
         <h2 class="carrusel-title">Eventos</h2>
         <div class="carrusel-container">
           <div class="slide active" onclick="openEvent('../Events/event1.html')">
@@ -75,89 +159,18 @@
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
       </section>
-      
-      <section id="integrantes">
-        <h2>Conoce a los integrantes</h2>
-        <div class="integrante" onclick="mostrarInfo(this)">
-          <img src="Imagen/Mapau.jpg" alt="Nombre del Integrante 1">
-          <div class="info-integrante">
-            <h3>Nombre del Integrante 1</h3>
-            <p>Rol: Rol del Integrante 1</p>
-            <p>Historia de como se unio</p>
+
+      <section id="Multimedia">
+        <h1>Multimedia</h1>
+        <div class="multi-categoria">
+          <h2>Videos</h2>
+          <div class="video-gallery">
+            <div class="video-item">
+              <h3>video 1</h3>
+
+            </div>
           </div>
         </div>
-        <div class="integrante">
-            <img src="Imagen/Amorchis.jpg" alt="Nombre del Integrante 2">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 2</h3>
-              <p>Rol: Rol del Integrante 2</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Yose.jpg" alt="Nombre del Integrante 3">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 3</h3>
-              <p>Rol: Rol del Integrante 3</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Ady.jpg" alt="Nombre del Integrante 4">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 4</h3>
-              <p>Rol: Rol del Integrante 4</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Lau.jpg" alt="Nombre del Integrante 5">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 5</h3>
-              <p>Rol: Rol del Integrante 5</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Une.jpg" alt="Nombre del Integrante 6">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 6</h3>
-              <p>Rol: Rol del Integrante 6</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Nikki.jpg" alt="Nombre del Integrante 7">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 7</h3>
-              <p>Rol: Rol del Integrante 7</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Elli.jpg" alt="Nombre del Integrante 8">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 8</h3>
-              <p>Rol: Rol del Integrante 8</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Leria.jpg" alt="Nombre del Integrante 9">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 9</h3>
-              <p>Rol: Rol del Integrante 9</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
-          <div class="integrante">
-            <img src="Imagen/Yassi.jpg" alt="Nombre del Integrante 10">
-            <div class="info-integrante">
-              <h3>Nombre del Integrante 10</h3>
-              <p>Rol: Rol del Integrante 10</p>
-              <p>Historia de como se unio</p>
-            </div>
-          </div>
       </section>
     </main>
     <!-- <footer class="final-pagina">

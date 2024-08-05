@@ -9,44 +9,33 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="../Imagen/Olitas.jpg" type="image/x-icon" />
 </head>
 <body>
-  <header>
-    <h1>Detalles del Evento 1</h1>
+  <header id="event">
+    <div class="logo">
+      <img src="../Imagen/Olitas.jpg" alt="Logo del grupo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">integrantes</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Multimedia</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+        <!--<li><a href="#">Inicio</a></li>-->
+      </ul>
+    </nav>
   </header>
   <main>
-    <div class="content-container">
-      <section class="event-info">
-        <h2>Información del Evento</h2>
-        <p>Aquí va la información detallada sobre el evento.</p>
-      </section>
-      <div class="forms-container">
-        <section class="form-section">
-          <h2>Formulario de Concurso</h2>
-          <form action="ruta/a/formulario-concurso" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="comentarios">Comentarios:</label>
-            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
-        <section class="form-section">
-          <h2>Registro de Tiendas</h2>
-          <form action="ruta/a/formulario-registro-tiendas" method="post">
-            <label for="tienda">Nombre de la Tienda:</label>
-            <input type="text" id="tienda" name="tienda" required>
-            <label for="contacto">Persona de Contacto:</label>
-            <input type="text" id="contacto" name="contacto" required>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-            <button type="submit">Registrar</button>
-          </form>
-        </section>
-      </div>
-    </div>
+    <section class="evento-detalle">
+      <h1>Evento 1</h1>
+      <p>Descripción detallada del evento 1.</p>
+      <a href="concurso.html">Formulario de Concurso</a>
+      <a href="registro-tiendas.html">Registro de Tiendas</a>
+    </section>
   </main>
 </body>
 </html>
