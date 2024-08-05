@@ -293,15 +293,19 @@ main .Sobre-Crystal {
   font-weight: 200;
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+@media (min-width: 1200px) {
+  .banner h1 {
+    font-size: 4rem; /* Aumenta el tamaño del texto para pantallas muy grandes */
   }
 
-  .logo img {
-    width: 150px; /* Ajusta el tamaño del logo */
+  .historia,
+  .contacto {
+    padding: 60px 40px; /* Aumenta el padding en pantallas grandes */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem; /* Ajusta el tamaño del texto del formulario */
   }
 }
 
