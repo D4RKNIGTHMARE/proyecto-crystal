@@ -4,13 +4,23 @@ document.getElementById('bgVideo').addEventListener('ended', function() {
 });
 
 /*Logica de los Integrantes*/
-function mostrarInfo(element) {
-  const info = element.querySelector('.info-integrante');
-  if (info.style.opacity == 0 || info.style.opacity == "") {
-    info.style.opacity = 1;
-  } else {
-    info.style.opacity = 0;
-  }
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide-integrante');
+let currentIndex = 0;
+const totalSlides = slides.length;
+
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlider();
+});
+
+function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
   
   /*Logica del Carrusel*/
