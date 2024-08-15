@@ -65,6 +65,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
   }
 });
 
+/*Audio*/
+function PlayAudio(){
+  document.getElementById("bgAudio").play();
+}
+window.onload = function(){
+  document.getElementById("bgAudio").play();
+} 
 
 /*Logica de la seccion de historia de crystal
 document.addEventListener('DOMContentLoaded', () => {

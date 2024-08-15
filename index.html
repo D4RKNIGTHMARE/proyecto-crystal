@@ -10,8 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
-  <body>
+  <body onclick="PlayAudio()">
     <header id="Cw-grupal">
       <div class="logo">
         <img src="Imagen/Olitas.jpg" alt="Logo del grupo" />
@@ -19,13 +23,10 @@
       <nav>
         <ul>
           <li><a href="#Inicio">Inicio</a></li>
-          <li><a href="#integrantes">integrantes</a></li>
-          <li><a href="#Eventos">Eventos</a></li>
-          <li><a href="#Multimedia">Multimedia</a></li>
-          <li><a href="#Historia">Historia</a></li>
-          <li><a href="#Blog">Blog</a></li>
-          <li><a href="#Contato">Contacto</a></li>
-          <li><a href="#Noticias">Noticias</a></li>
+          <li><a href="views/evento.html">Eventos</a></li>
+          <li><a href="views/multimedia.html">Multimedia</a></li>
+          <li><a href="views/blog.html">Blog</a></li>
+          <li><a href="views/fandom.html">Fandom</a></li>
         </ul>
       </nav>
     </header>
@@ -42,15 +43,34 @@
         </div>
       </section>
 
-      <section class="noticias" id="Noticias">
+      <section id="news">
         <h2>Ultimas Noticias</h2>
-        <div class="noticia">
+        <article class="new-item">
           <h3>Titulo de la noticia</h3>
           <p>Descripción breve</p>
           <a href="#">Leer mas</a>
-        </div>
+        </article>
+        <article class="new-item">
+          <h3>Titulo de la noticia</h3>
+          <p>Descripción breve</p>
+          <a href="#">Leer mas</a>
+        </article>
         <!--se agrega mas noticias desde .noticia-->
       </section>
+
+      <section id="history">
+        <h2>Nuestra Historia</h2>
+        <p>
+          Crystal Wave comenzó su viaje en [año] en Cartagena. Desde entonces,
+          hemos estado cubriendo los mejores bailes de KPOP y creciendo como
+          grupo. Nuestra misión es [misión del grupo].
+        </p>
+        <p>
+          Desde nuestros primeros pasos hasta ahora, hemos tenido el honor de
+          [detalles importantes sobre la historia del grupo].
+        </p>
+      </section>
+
       <section id="integrantes">
         <h2>Conoce a los integrantes</h2>
         <div class="slider-container">
@@ -111,77 +131,34 @@
         </div>
       </section>
 
-      <section id="Eventos" class="carrusel">
-        <h2 class="carrusel-title">Eventos</h2>
-        <div class="carrusel-container">
-          <div
-            class="slide active"
-            onclick="openEvent('../Events/event1.html')"
-          >
-            <div class="slide-content">
-              <img
-                src="Imagen/Summerwave.jpg"
-                alt="Evento 1"
-                class="img-evento"
-              />
-              <div class="info-evento">
-                <h3>Evento 1</h3>
-                <p>Descripción del evento 1.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide" onclick="openEvent('evento2.html')">
-            <div class="slide-content">
-              <img src="Imagen/Kpop.jpg" alt="Evento 2" class="img-evento" />
-              <div class="info-evento">
-                <h3>Evento 2</h3>
-                <p>Descripción del evento 2.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Repite el bloque .slide para cada evento -->
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-      </section>
-
-      <section id="Multimedia">
-        <h1>Multimedia</h1>
-        <div class="multi-categoria">
-          <h2>Videos</h2>
-          <div class="video-gallery">
-            <div class="video-item">
-              <h3>video 1</h3>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
-    <!-- <footer class="final-pagina">
-        <div class="contenedor-footer">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="Imagen/Crystal.jpg" alt="Logo de Crystal Wave">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fugit?</P>
-            </div>
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/crystalwavectg" class="fa fa-facebook" target="_blank"></a>
-                    <a href="https://www.youtube.com/@CrystalWave" class="fa fa-youtube" target="_blank"></a>
-                    <a href="https://www.instagram.com/crystalwavectg/" class="fa fa-instagram" target="_blank"></a>
-                </div>
-            </div>
-        </div class="Derechos">
-        <h2 class="titulo-final">&copy;2024 <b>Crystal Wave Desing / Fercho</b> - Todos los derechos reservados </h2>
-    </div>
-    </footer>-->
+    <footer>
+      <h2>SIGUENOS</h2>
+      <ul class="red-social">
+        <li>
+          <a
+            href="https://www.instagram.com/crystalwavectg/"
+            target="_blank"
+            title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/@CrystalWave"
+            target="_blank"
+            title="Youtube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+      <p>
+        &copy;2024 <b>Crystal Wave Desing / Fercho</b> - Todos los derechos
+        reservados
+      </p>
+    </footer>
+
+    <audio id="bgAudio" src="Sound/(Audio) Queen.mp3" autoplay loop></audio>
     <script src="js/index.js"></script>
   </body>
 </html>
